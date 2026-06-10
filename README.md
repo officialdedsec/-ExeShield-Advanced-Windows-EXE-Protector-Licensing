@@ -27,6 +27,8 @@ It compiles the protector stub into **native machine code** using Nuitka – no 
 ---
 ![ExeShield Screenshot](Screenshot%202026-06-10%20131233.png)
 
+[![Documentation](https://img.shields.io/badge/docs-USAGE.md-blue)](USAGE.md)
+
 ## 📋 Requirements
 
 - Windows 7 / 8 / 10 / 11 (64‑bit recommended)
@@ -37,8 +39,3 @@ Install the Python dependencies:
 
 ```cmd
 pip install -r requirements.txt
-
-
-## 📖 Usage
-
-For detailed step‑by‑step instructions, see the **[USAGE.md](USAGE.md)** file.
