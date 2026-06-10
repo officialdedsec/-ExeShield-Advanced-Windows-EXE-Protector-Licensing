@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.dll
+*.exe
+*.log
+*.csv
+
+# Build artifacts
+build/
+dist/
+*.spec
+*.manifest
+*.rc
+*.ico
+
+# ExeShield temporary files
+exeshield_*/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+keygen_log.csv
