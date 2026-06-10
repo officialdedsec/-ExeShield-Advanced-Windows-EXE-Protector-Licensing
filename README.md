@@ -36,3 +36,54 @@ Install the required package:
 
 ```cmd
 pip install -r requirements.txt
+
+
+🚀 Usage
+1. Protect an EXE (lock_tool.py)
+Run the locker GUI:
+
+cmd
+python lock_tool.py
+Steps:
+
+Select the target EXE.
+
+Choose output path (default: <original>_locked.exe).
+
+Pick a lock mode:
+
+Lock to THIS machine – uses the current PC’s HWID.
+
+Lock to specific HWID – enter a 32‑hex HWID manually.
+
+Universal (per‑machine keys) – each PC needs its own key (no fixed HWID).
+
+Select any additional protection checks (Anti‑VM, Anti‑Debug, etc.).
+
+Click Lock EXE.
+The tool will generate the stub, compile it to native code with Nuitka, burn the license blob, and append the original EXE as payload.
+
+The output is a fully standalone, protected EXE.
+
+2. Generate activation keys (keygen_tool.py)
+⚠️ This tool is private – never give it to customers!
+
+cmd
+python keygen_tool.py
+Enter the customer’s HWID (displayed in the activation dialog of the protected EXE).
+
+(Optional) Add a customer note.
+
+Click Generate Activation Key.
+
+Send the generated key to the customer.
+
+The keygen logs all generated keys to keygen_log.csv (batch mode available).
+
+🔧 Configuration
+Before distributing your protected EXEs, change the master secret in crypto_core.py:
+
+python
+MASTER_SECRET = b"CHANGE_THIS_TO_YOUR_OWN_LONG_RANDOM_SECRET_v1"
+Replace the string with a long, random, secret value – keep it safe!
+The same secret must be used in both lock_tool.py and keygen_tool.py.
