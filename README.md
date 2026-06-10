@@ -31,7 +31,6 @@ It compiles the protector stub into **native machine code** using Nuitka – no 
 - Windows 7 / 8 / 10 / 11 (64‑bit recommended)
 - Python 3.8 or higher
 - Tkinter (usually included with Python)
-- Microsoft Visual C++ Build Tools (for Nuitka, see [installation guide](https://nuitka.net/doc/user-manual.html#install-windows))
 
 Install the Python dependencies:
 
