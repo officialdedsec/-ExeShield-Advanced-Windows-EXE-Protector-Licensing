@@ -37,3 +37,8 @@ Install the Python dependencies:
 
 ```cmd
 pip install -r requirements.txt
+
+
+## 📖 Usage
+
+For detailed step‑by‑step instructions, see the **[USAGE.md](USAGE.md)** file.
