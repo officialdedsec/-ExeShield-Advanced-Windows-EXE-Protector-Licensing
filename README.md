@@ -27,7 +27,19 @@ It compiles the protector stub into **native machine code** using Nuitka – no 
 ---
 ![ExeShield Screenshot](Screenshot%202026-06-10%20131233.png)
 
-[![Documentation](https://img.shields.io/badge/docs-USAGE.md-blue)](USAGE.md)
+
+## 🚀 Quick Usage
+
+1. Launch `ExeShieldLocker.exe` (or run `python lock_tool.py`).
+2. Select your target EXE and output path.
+3. Choose a lock mode:
+   - **Lock to THIS machine** – uses current HWID.
+   - **Lock to specific HWID** – paste a 32‑hex HWID.
+   - **Universal (per‑machine keys)** – each PC needs its own unique key.
+4. Tick any extra protections (Anti‑VM, Anti‑Debug, etc.).
+5. Click **Lock EXE** – the protected EXE is created.
+
+> 💡 For full details (activation, key generation, troubleshooting), see [USAGE.md](USAGE.md).
 
 ## 📋 Requirements
 
