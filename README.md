@@ -25,6 +25,7 @@ It compiles the protector stub into **native machine code** using Nuitka – no 
 - **Key storage** – saves activation keys in the Windows registry (per user).
 
 ---
+![ExeShield Screenshot](Screenshot%202026-06-10%20131233.png)
 
 ## 📋 Requirements
 
